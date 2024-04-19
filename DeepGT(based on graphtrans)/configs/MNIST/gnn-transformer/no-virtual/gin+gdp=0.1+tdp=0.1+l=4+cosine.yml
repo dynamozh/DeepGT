@@ -1,0 +1,33 @@
+dataset: MNIST
+aug: baseline
+model_type: gnn-transformer
+
+gnn_type: gin
+gnn_virtual_node: false
+graph_pooling: cls
+
+transformer_norm_input: true
+
+runs: 5
+seed: 3407
+epochs: 100
+start-eval: 1
+batch_size: 32
+scheduler: plateau
+lr: 0.0001
+
+gnn_emb_dim: 128
+d_model: 128
+dim_feedforward: 256
+
+num_encoder_layers: 10
+gnn_num_layer: 8
+gnn_residual: true
+
+transformer_dropout: 0.3
+gnn_dropout: 0.3
+
+
+
+
+

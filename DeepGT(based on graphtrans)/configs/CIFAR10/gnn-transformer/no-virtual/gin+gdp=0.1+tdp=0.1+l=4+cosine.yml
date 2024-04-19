@@ -1,0 +1,33 @@
+dataset: CIFAR10
+aug: baseline
+model_type: gnn-transformer
+
+gnn_type: gin
+gnn_virtual_node: false
+graph_pooling: cls
+
+transformer_norm_input: true
+
+runs: 5
+seed: 3407
+epochs: 100
+start-eval: 1
+batch_size: 32
+scheduler: plateau
+lr: 0.0005
+
+gnn_emb_dim: 256
+d_model: 256
+dim_feedforward: 256
+
+num_encoder_layers: 5
+gnn_num_layer: 4
+gnn_residual: true
+
+transformer_dropout: 0.3
+gnn_dropout: 0.3
+
+
+
+
+
